@@ -4,6 +4,7 @@
 # include <iostream>
 # include <string>
 # include <iterator>
+# include <algorithm>
 
 class	notfound : public std::exception
 {
@@ -14,16 +15,17 @@ class	notfound : public std::exception
 		}
 };
 
-template<typeneme T>
+template<typename T>
 int  easyfind(T const& container, int const& n)
 {
 
 	
     typename T::const_iterator it;
-	it = find(container.begin(), container.end(), i);
+
+	it = std::find(container.begin(), container.end(), n);
 	if (it == container.end())
-		throw (notfound());
-	return (*it);
+		throw notfound();
+	return *it;
 }
 
 

@@ -1,4 +1,4 @@
-NAME = stl
+NAME = span
 
 FLAGS = -Wall -Werror -Wextra -std=c++98
 
@@ -6,7 +6,7 @@ CXX = c++
 
 OBJS = $(SRCS:.cpp=.o)
 
-SRCS = main.cpp
+SRCS = main.cpp Span.cpp
 
 all: $(NAME)
 
