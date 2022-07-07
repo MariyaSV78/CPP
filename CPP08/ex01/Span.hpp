@@ -13,7 +13,7 @@ class Span
 {
     private:
         unsigned int        _N;
-        std::vector<int>    _vect;
+        std::vector<int>    _v;
 
     public:
         Span();
@@ -23,21 +23,26 @@ class Span
         Span(Span const& src);
         Span& operator=(Span const& rhs);
 
-        void    addNumb(int nbr);
+        void    addNumber(int nbr);
         int     shortestSpan();
         int     longestSpan();
+        void    addNumberMulti(unsigned int N);    
 
 
         class maxN: public std::exception
         {
             const char *what() const throw()
+            {
                 return ("Max size of conteiner is riched");
+            }
         };
 
         class noNbr: public std::exception
         {
             const char *what() const throw()
+            {
                 return "There is one or any Nbr";
+            }
         };
 
 };
