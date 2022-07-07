@@ -1,0 +1,6 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/mnt/e/Sosnova/ecole_42/CPP/CPP08'
+make: Leaving directory '/mnt/e/Sosnova/ecole_42/CPP/CPP08'
+ 
+make: *** No targets specified and no makefile found.  Stop.
+
