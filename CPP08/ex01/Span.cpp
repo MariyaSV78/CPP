@@ -66,7 +66,7 @@ int     Span::longestSpan()
 
 int     Span::shortestSpan()
 {
-    int min;
+    int min = 0;
     int tmp;
  
     if(_v.empty() || _v.size() <= 1)
