@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   bsp.cpp                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: msosnova <msosnova@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/11/23 09:41:24 by msosnova          #+#    #+#             */
+/*   Updated: 2022/11/23 09:41:26 by msosnova         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "Point.hpp"
 
 bool bsp( Point const a, Point const b, Point const c, Point const point)
@@ -39,4 +51,4 @@ std::cout << ((x1-x0)*(y2-y1)-(x2-x1)*(y1-y0)) << std::endl;
       else
             return 1;
 }
-}
+

@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ScavTrap.cpp                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: msosnova <msosnova@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/11/23 09:48:24 by msosnova          #+#    #+#             */
+/*   Updated: 2022/11/23 09:48:27 by msosnova         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "ScavTrap.hpp"
 
 ScavTrap::ScavTrap()
@@ -9,7 +21,7 @@ ScavTrap::ScavTrap()
      this->_attackDamage = 20;
 }
 
-ScavTrap::ScavTrap(std::string name)
+ScavTrap::ScavTrap(std::string name):ClapTrap(name)
 { 
     std::cout << "ScavTrap Overload constructor with name called" << std::endl;
      this->_name = name;
@@ -33,6 +45,8 @@ ScavTrap::~ScavTrap()
 
 ScavTrap&   ScavTrap::operator=(ScavTrap const& rhs)
 {
+    if (this == &rhs)
+		return *this;
     this->_name = rhs.getName();
     this->_pointDeVie = rhs.getPointDeVie();
     this->_pointEnergi = rhs.getEnergi();

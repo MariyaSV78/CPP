@@ -9,7 +9,7 @@ ScavTrap::ScavTrap()
      this->_attackDamage = 20;
 }
 
-ScavTrap::ScavTrap(std::string name)
+ScavTrap::ScavTrap(std::string name):ClapTrap(name)
 { 
     std::cout << "ScavTrap Overload constructor with name called" << std::endl;
      this->_name = name;
@@ -18,7 +18,7 @@ ScavTrap::ScavTrap(std::string name)
      this->_attackDamage = 20;
 }
 
-ScavTrap::ScavTrap(ScavTrap const& Copy)
+ScavTrap::ScavTrap(ScavTrap const& Copy):ClapTrap(Copy._name)
 {
     std::cout << "ScavTrap Constructor by copy called" << std::endl;
     *this = Copy;
@@ -28,7 +28,6 @@ ScavTrap::~ScavTrap()
 {
     std::cout << "ScavTrap Destructor called" << std::endl;   
 }
-
 
 
 ScavTrap&   ScavTrap::operator=(ScavTrap const& rhs)

@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Copyfile.cpp                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: msosnova <msosnova@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/11/23 09:36:31 by msosnova          #+#    #+#             */
+/*   Updated: 2022/11/23 09:36:36 by msosnova         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "Copyfile.hpp"
 
 Replace::Replace(){};
@@ -10,7 +22,7 @@ int Replace::ft_check_error(int ac, char **argv)
 
     if (ac != 4)
     {
-        std::cout << "Error, three parameters required" << std::endl;
+        std::cout << "Error, three parameters required: ./replace <file> <s1> <remplacée par s2>" << std::endl;
         return (1);
     }
     _s1 = argv[2];
