@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Cat.cpp                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: msosnova <msosnova@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/11/24 01:29:33 by msosnova          #+#    #+#             */
+/*   Updated: 2022/11/24 01:29:36 by msosnova         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "Cat.hpp"
 
 Cat::Cat()
@@ -12,7 +24,7 @@ Cat::Cat(std::string type)
     std::cout << "\"Cat\" constructor with name called" << std::endl;
 }
 
-Cat::Cat(Cat const& ClassCopy)
+Cat::Cat(Cat const& ClassCopy):Animal()
 {
     std::cout << "Constructor copy in \"Cat class\" called" << std::endl;
     *this = ClassCopy;

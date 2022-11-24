@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   WrongCat.cpp                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: msosnova <msosnova@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/11/24 01:31:25 by msosnova          #+#    #+#             */
+/*   Updated: 2022/11/24 01:31:27 by msosnova         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "WrongCat.hpp"
 
 WrongCat::WrongCat()
@@ -12,7 +24,7 @@ WrongCat::WrongCat(std::string type)
     std::cout << "\"WrongCat\" constructor with name called" << std::endl;
 }
 
-WrongCat::WrongCat(WrongCat const& ClassCopy)
+WrongCat::WrongCat(WrongCat const& ClassCopy):WrongAnimal()
 {
     std::cout << "Constructor copy in \"WrongCat class\" called" << std::endl;
     *this = ClassCopy;

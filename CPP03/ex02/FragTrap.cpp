@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   FragTrap.cpp                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: msosnova <msosnova@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/11/24 01:26:08 by msosnova          #+#    #+#             */
+/*   Updated: 2022/11/24 01:26:11 by msosnova         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 # include "FragTrap.hpp"
 
 FragTrap::FragTrap()
@@ -18,7 +30,7 @@ FragTrap::FragTrap(std::string name)
    _attackDamage = 30;
 }
 
-FragTrap::FragTrap(FragTrap const& Copy)
+FragTrap::FragTrap(FragTrap const& Copy):ClapTrap()
 {
     std::cout << "FragTrap Constructor by copy called" << std::endl;
     *this = Copy;

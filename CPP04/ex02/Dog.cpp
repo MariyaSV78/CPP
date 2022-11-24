@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Dog.cpp                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: msosnova <msosnova@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/11/24 01:35:38 by msosnova          #+#    #+#             */
+/*   Updated: 2022/11/24 01:35:40 by msosnova         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "Dog.hpp"
 
 Dog::Dog()
@@ -14,7 +26,7 @@ Dog::Dog(std::string type)
     std::cout << "\"Dog\" constructor with name called" << std::endl;
 }
 
-Dog::Dog(Dog const& ClassCopy)
+Dog::Dog(Dog const& ClassCopy):AAnimal()
 {
     std::cout << "Constructor copy in \"Dog class\" called" << std::endl;
     _brain = new Brain();

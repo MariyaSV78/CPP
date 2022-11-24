@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ScavTrap.cpp                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: msosnova <msosnova@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/11/24 01:26:50 by msosnova          #+#    #+#             */
+/*   Updated: 2022/11/24 01:26:53 by msosnova         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "ScavTrap.hpp"
 
 ScavTrap::ScavTrap()
@@ -18,7 +30,7 @@ ScavTrap::ScavTrap(std::string name):ClapTrap(name)
      this->_attackDamage = 20;
 }
 
-ScavTrap::ScavTrap(ScavTrap const& Copy):ClapTrap(Copy._name)
+ScavTrap::ScavTrap(ScavTrap const& Copy):ClapTrap()
 {
     std::cout << "ScavTrap Constructor by copy called" << std::endl;
     *this = Copy;
